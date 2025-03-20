@@ -1,0 +1,34 @@
+env:
+  CLIENT_ID: ${{ secrets.CLIENT_ID }}
+  CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+  ORG_KEY: ${{ secrets.ORG_KEY }}
+  APP_KEY: ${{ secrets.APP_KEY }}
+
+name: CI Build
+on: push
+jobs:
+  rubocop:
+    name: Run Rubocop
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+      - name: Check styles
+        run: bundle exec rubocop
+  rspec:
+    name: Run RSpec
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+      - name: Run specs
+        env:
+          CLIENT_ID: ${{ env.CLIENT_ID }}
+          CLIENT_SECRET: ${{ env.CLIENT_SECRET }}
+          ORG_KEY: ${{ env.ORG_KEY }}
+          APP_KEY: ${{ env.APP_KEY }}
+        run: bundle exec rspec spec
