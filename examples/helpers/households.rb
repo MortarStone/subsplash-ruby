@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 def print_households(results)
-  print_list("household", 'id', results, %w[_embedded households])
+  print_list('household', 'id', results, %w[_embedded households])
 end
 
 def print_household(results)
@@ -7,9 +9,9 @@ def print_household(results)
 end
 
 def household_columns
-  [
-    'id',
-    'name',
-    'status'
+  %w[
+    id
+    name
+    status
   ]
 end

@@ -1,0 +1,36 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://core.subsplash.com/donations/v1/donations/8b84f2ce-11ef-4c1b-ab67-7a76687b5945
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.10.4
+      Authorization:
+      - Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6Ijc1YTM3NDZkLTE4MmItNDM1Ny04OTg2LWUwNjBiNmM4MWJlNSIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDI1ODMzMjIsImlhdCI6MTc0MjU3MjUxNywiaXNzIjoiaHR0cHM6Ly9jb3JlLnN1YnNwbGFzaC5jb20vdG9rZW5zIiwic3ViIjoiMWQyOTAwZTQtNjMzZS00Njc4LWFiZjctMzlmMDkyNDA4YTU5IiwiYXBwcyI6eyJNT1JUQVIiOnsicm9sZXMiOlsiN2Q0MjM1YWMtMzM2MC00YjE5LTkwOWQtZDNkMTkwYjMwY2IzIl19fSwib3JncyI6eyJLNVJaVzlGUyI6eyJyb2xlcyI6WyI3ZDQyMzVhYy0zMzYwLTRiMTktOTA5ZC1kM2QxOTBiMzBjYjMiXX19LCJyYXRlIjp7ImludCI6NjAsImxpbSI6MTAwMDAwMCwiYnVyIjoxNTAwMDAwfX0.YjhbLpuQUOi0xRnNWSYicb7-iKwvgrPuDEZlnakCrzK7QbrOdKYvn-OplxWHmxlAtGXtfA8fb5W9Hc_sjMXLUCZvGH5Q74LL8y0eV3sIl4DlNFQIQ3Y3wZ9jUM27sauuwBu1Vm5I9Oxbs16RdheNWN-aTef2Ke_fIcjjeL027OeEsSrrG-Axk6dCr3n8dl8ls58tVrCz_GDiHAR-SnSDt65ghgjgsW6nWjPplFPAxj72tyzJrq-PpFRwbXQLqgoRXmSIi7r904m3aD1fxatcAg-HHEdpl1vONRvb_vTBLcObUDeI_TJEaBULekToC4qYZfJ0NsNGerBuI06gK7de_g
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Fri, 21 Mar 2025 16:13:54 GMT
+      content-type:
+      - application/hal+json
+      content-length:
+      - '714'
+      connection:
+      - keep-alive
+      server:
+      - nginx
+      request-id:
+      - 74916f5d-062a-4b5a-8741-724c8e7b6642
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://core.subsplash.com/donations/v1/donations/8b84f2ce-11ef-4c1b-ab67-7a76687b5945"}},"id":"8b84f2ce-11ef-4c1b-ab67-7a76687b5945","short_id":81690533,"org_key":"K5RZW9FS","total_amount":{"value":2078,"currency":"USD"},"total_fee":{"value":51,"currency":"USD"},"designations":[{"fund":"3de245a4-a292-45be-b5fe-33d0e348d4fd","amount":{"value":2078,"currency":"USD"},"fee":{"value":51,"currency":"USD"}}],"status":"transfer
+        pending","memo":"","donor_covered_fees":true,"auth_date":"2025-03-11T18:43:02Z","frequency":"one_time","created_at":"2025-03-11T18:43:04Z","updated_at":"2025-03-11T18:43:12Z","_embedded":{"instrument":{"id":"47536055-9cdc-543f-b2bd-1c72f3b97b9a","type":"Visa"}}}'
+  recorded_at: Fri, 21 Mar 2025 16:13:54 GMT
+recorded_with: VCR 6.3.1

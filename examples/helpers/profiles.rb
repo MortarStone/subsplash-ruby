@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 def print_profiles(results)
-  print_list("profile", 'id', results, %w[_embedded profiles])
+  print_list('profile', 'id', results, %w[_embedded profiles])
 end
 
 def print_profile(results)

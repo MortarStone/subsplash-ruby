@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 def print_campaigns(results)
-  print_list("campaign", 'id', results, %w[_embedded campaigns])
+  print_list('campaign', 'id', results, %w[_embedded campaigns])
 end
 
 def print_campaign(results)

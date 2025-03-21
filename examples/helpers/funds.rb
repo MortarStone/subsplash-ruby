@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 def print_funds(results)
-  print_list("fund", 'id', results, %w[_embedded funds])
+  print_list('fund', 'id', results, %w[_embedded funds])
 end
 
 def print_fund(results)

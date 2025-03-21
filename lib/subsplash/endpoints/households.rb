@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 module Subsplash
   module Endpoints
     module Households
       def households(params = {})
         get(
-          "/people/v1/households",
+          '/people/v1/households',
           params.deep_merge({ filter: { org_key: @org_key } })
         )
       end

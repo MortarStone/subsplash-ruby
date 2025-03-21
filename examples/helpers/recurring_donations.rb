@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 def print_recurring_donations(results)
-  print_list("recurring_donation", 'id', results, %w[_embedded recurring-donations])
+  print_list('recurring_donation', 'id', results, %w[_embedded recurring-donations])
 end
 
 def print_recurring_donation(results)

@@ -1,0 +1,37 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://core.subsplash.com/donations/v1/funds?filter%5Borg_key%5D=K5RZW9FS
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.10.4
+      Authorization:
+      - Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImRjM2YyYWRlLTBkYmUtNDczMi1iYzJlLTc5ZTUxMmY4YzNmNCIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDI1MDE4ODMsImlhdCI6MTc0MjQ5MTA3OCwiaXNzIjoiaHR0cHM6Ly9jb3JlLnN1YnNwbGFzaC5jb20vdG9rZW5zIiwic3ViIjoiMWQyOTAwZTQtNjMzZS00Njc4LWFiZjctMzlmMDkyNDA4YTU5IiwiYXBwcyI6eyJNT1JUQVIiOnsicm9sZXMiOlsiN2Q0MjM1YWMtMzM2MC00YjE5LTkwOWQtZDNkMTkwYjMwY2IzIl19fSwib3JncyI6eyJLNVJaVzlGUyI6eyJyb2xlcyI6WyI3ZDQyMzVhYy0zMzYwLTRiMTktOTA5ZC1kM2QxOTBiMzBjYjMiXX19LCJyYXRlIjp7ImludCI6NjAsImxpbSI6MTAwMDAwMCwiYnVyIjoxNTAwMDAwfX0.iT4fqTebZDgdoLmcjQaOOQU98BJ5x15DZScJx622WfCLLOK-8Mb6agP7UHq8V3nYqaQ7voOwrHaM8BPQ7gDYwEfsoo-fL_DDjBwjG7kGTHRQE2WYpC0PKwZ48pLKnByv3xq2_YJGRFqgT1RJUQPg5cYS6EKCU5mDOhj5hEYuYT-Q61LUsfnMSpHLSK6xOzq_Aoidl-itkFWNE78-fK4h05W8GqdHMzKDXAmxQoYhztMHMd7f6i9BnkMDpecSpisSV3IUNjXwH2j15tYhMegwleu7Nbg0hnAt7TiYWFieJMs8LVyVS0VN9y9KiM37-n_5RoAkK8OHnfBnWpYcVGSgdQ
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      date:
+      - Fri, 21 Mar 2025 16:10:43 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '79'
+      connection:
+      - keep-alive
+      server:
+      - nginx
+      request-id:
+      - 893bb6e9-6a13-4a4d-a7d6-31eaf0ffa138
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":"invalid_token","detail":"token is expired by 19h52m40s"}]}
+
+        '
+  recorded_at: Fri, 21 Mar 2025 16:10:43 GMT
+recorded_with: VCR 6.3.1

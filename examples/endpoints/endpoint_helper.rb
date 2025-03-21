@@ -12,6 +12,5 @@ Dotenv.load(File.join(__dir__, '..', '..', '.env'))
 
 @client = Subsplash::Client.new(
   access_token: ENV.fetch('ACCESS_TOKEN', nil),
-  org_key: ENV.fetch('ORG_KEY', nil),
-  app_key: ENV.fetch('APP_KEY', nil)
+  org_key: ENV.fetch('ORG_KEY', nil)
 )

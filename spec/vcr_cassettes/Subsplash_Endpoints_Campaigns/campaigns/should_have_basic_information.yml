@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://core.subsplash.com/donations/v1/campaigns?filter%5Borg_key%5D=K5RZW9FS
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.10.4
+      Authorization:
+      - Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6Ijc1YTM3NDZkLTE4MmItNDM1Ny04OTg2LWUwNjBiNmM4MWJlNSIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDI1ODMzMjIsImlhdCI6MTc0MjU3MjUxNywiaXNzIjoiaHR0cHM6Ly9jb3JlLnN1YnNwbGFzaC5jb20vdG9rZW5zIiwic3ViIjoiMWQyOTAwZTQtNjMzZS00Njc4LWFiZjctMzlmMDkyNDA4YTU5IiwiYXBwcyI6eyJNT1JUQVIiOnsicm9sZXMiOlsiN2Q0MjM1YWMtMzM2MC00YjE5LTkwOWQtZDNkMTkwYjMwY2IzIl19fSwib3JncyI6eyJLNVJaVzlGUyI6eyJyb2xlcyI6WyI3ZDQyMzVhYy0zMzYwLTRiMTktOTA5ZC1kM2QxOTBiMzBjYjMiXX19LCJyYXRlIjp7ImludCI6NjAsImxpbSI6MTAwMDAwMCwiYnVyIjoxNTAwMDAwfX0.YjhbLpuQUOi0xRnNWSYicb7-iKwvgrPuDEZlnakCrzK7QbrOdKYvn-OplxWHmxlAtGXtfA8fb5W9Hc_sjMXLUCZvGH5Q74LL8y0eV3sIl4DlNFQIQ3Y3wZ9jUM27sauuwBu1Vm5I9Oxbs16RdheNWN-aTef2Ke_fIcjjeL027OeEsSrrG-Axk6dCr3n8dl8ls58tVrCz_GDiHAR-SnSDt65ghgjgsW6nWjPplFPAxj72tyzJrq-PpFRwbXQLqgoRXmSIi7r904m3aD1fxatcAg-HHEdpl1vONRvb_vTBLcObUDeI_TJEaBULekToC4qYZfJ0NsNGerBuI06gK7de_g
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Fri, 21 Mar 2025 16:11:52 GMT
+      content-type:
+      - application/hal+json
+      content-length:
+      - '1017'
+      connection:
+      - keep-alive
+      server:
+      - nginx
+      request-id:
+      - 81305436-6fd6-49ec-a25b-8390a19cef42
+      resource-count:
+      - '1'
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://core.subsplash.com/donations/v1/campaigns?filter%5Borg_key%5D=K5RZW9FS"},"first":{"href":"https://core.subsplash.com/donations/v1/campaigns?filter%5Borg_key%5D=K5RZW9FS\u0026page%5Bnumber%5D=1\u0026page%5Bsize%5D=20"},"next":{"href":"https://core.subsplash.com/donations/v1/campaigns?filter%5Borg_key%5D=K5RZW9FS\u0026page%5Bnumber%5D=2\u0026page%5Bsize%5D=20"}},"count":1,"_embedded":{"campaigns":[{"_links":{"self":{"href":"https://core.subsplash.com/donations/v1/campaigns/7b0faac4-3b12-4889-af9a-491feaaf3ef2"}},"id":"7b0faac4-3b12-4889-af9a-491feaaf3ef2","org_key":"K5RZW9FS","title":"New
+        Building","description":"","state":"active","ready_to_publish":true,"start_date":"2025-03-01T00:00:00Z","end_date":"2027-03-31T23:59:59Z","goal":{"value":10000000,"currency":"USD"},"given":{"value":44390,"currency":"USD"},"gross_given":{"value":44390,"currency":"USD"},"total_fees":{},"pledged":{},"created_at":"2025-03-20T18:48:23Z","updated_at":"2025-03-20T18:48:23Z","_embedded":{}}]}}'
+  recorded_at: Fri, 21 Mar 2025 16:11:52 GMT
+recorded_with: VCR 6.3.1

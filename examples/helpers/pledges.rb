@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 def print_pledges(results)
-  print_list("pledge", 'id', results, %w[_embedded pledges])
+  print_list('pledge', 'id', results, %w[_embedded pledges])
 end
 
 def print_pledge(results)

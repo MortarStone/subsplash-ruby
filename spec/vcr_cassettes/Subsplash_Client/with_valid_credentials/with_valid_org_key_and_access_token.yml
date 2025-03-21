@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://core.subsplash.com/donations/v1/funds?filter%5Borg_key%5D=K5RZW9FS
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.10.4
+      Authorization:
+      - Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6Ijc1YTM3NDZkLTE4MmItNDM1Ny04OTg2LWUwNjBiNmM4MWJlNSIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDI1ODMzMjIsImlhdCI6MTc0MjU3MjUxNywiaXNzIjoiaHR0cHM6Ly9jb3JlLnN1YnNwbGFzaC5jb20vdG9rZW5zIiwic3ViIjoiMWQyOTAwZTQtNjMzZS00Njc4LWFiZjctMzlmMDkyNDA4YTU5IiwiYXBwcyI6eyJNT1JUQVIiOnsicm9sZXMiOlsiN2Q0MjM1YWMtMzM2MC00YjE5LTkwOWQtZDNkMTkwYjMwY2IzIl19fSwib3JncyI6eyJLNVJaVzlGUyI6eyJyb2xlcyI6WyI3ZDQyMzVhYy0zMzYwLTRiMTktOTA5ZC1kM2QxOTBiMzBjYjMiXX19LCJyYXRlIjp7ImludCI6NjAsImxpbSI6MTAwMDAwMCwiYnVyIjoxNTAwMDAwfX0.YjhbLpuQUOi0xRnNWSYicb7-iKwvgrPuDEZlnakCrzK7QbrOdKYvn-OplxWHmxlAtGXtfA8fb5W9Hc_sjMXLUCZvGH5Q74LL8y0eV3sIl4DlNFQIQ3Y3wZ9jUM27sauuwBu1Vm5I9Oxbs16RdheNWN-aTef2Ke_fIcjjeL027OeEsSrrG-Axk6dCr3n8dl8ls58tVrCz_GDiHAR-SnSDt65ghgjgsW6nWjPplFPAxj72tyzJrq-PpFRwbXQLqgoRXmSIi7r904m3aD1fxatcAg-HHEdpl1vONRvb_vTBLcObUDeI_TJEaBULekToC4qYZfJ0NsNGerBuI06gK7de_g
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Fri, 21 Mar 2025 16:10:46 GMT
+      content-type:
+      - application/hal+json
+      content-length:
+      - '2292'
+      connection:
+      - keep-alive
+      server:
+      - nginx
+      request-id:
+      - 0bd425bf-c5cc-4a0a-b4bd-2635a9f49ffb
+      resource-count:
+      - '8'
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://core.subsplash.com/donations/v1/funds?filter%5Borg_key%5D=K5RZW9FS"},"first":{"href":"https://core.subsplash.com/donations/v1/funds?filter%5Borg_key%5D=K5RZW9FS\u0026page%5Bnumber%5D=1\u0026page%5Bsize%5D=20"},"next":{"href":"https://core.subsplash.com/donations/v1/funds?filter%5Borg_key%5D=K5RZW9FS\u0026page%5Bnumber%5D=2\u0026page%5Bsize%5D=20"}},"count":8,"_embedded":{"funds":[{"_links":{"self":{"href":"https://core.subsplash.com/donations/v1/funds/3de245a4-a292-45be-b5fe-33d0e348d4fd"}},"id":"3de245a4-a292-45be-b5fe-33d0e348d4fd","name":"General
+        Fund","org_key":"K5RZW9FS","state":"published","_embedded":{}},{"_links":{"self":{"href":"https://core.subsplash.com/donations/v1/funds/8c0abfbe-4f70-4de8-9db6-1adac393fdf4"}},"id":"8c0abfbe-4f70-4de8-9db6-1adac393fdf4","name":"Missions","org_key":"K5RZW9FS","state":"published","_embedded":{}},{"_links":{"self":{"href":"https://core.subsplash.com/donations/v1/funds/d002cfa4-d510-4781-82a5-ffa6eb6600c4"}},"id":"d002cfa4-d510-4781-82a5-ffa6eb6600c4","name":"Building
+        Fund","org_key":"K5RZW9FS","state":"published","_embedded":{}},{"_links":{"self":{"href":"https://core.subsplash.com/donations/v1/funds/005bb0d1-4100-43f9-af37-2704c1b686dc"}},"id":"005bb0d1-4100-43f9-af37-2704c1b686dc","name":"Special
+        Fund","org_key":"K5RZW9FS","state":"unpublished","_embedded":{}},{"_links":{"self":{"href":"https://core.subsplash.com/donations/v1/funds/90fd1508-25bf-4524-8d1c-3de387902aeb"}},"id":"90fd1508-25bf-4524-8d1c-3de387902aeb","name":"Youth
+        Fund","org_key":"K5RZW9FS","state":"published","_embedded":{}},{"_links":{"self":{"href":"https://core.subsplash.com/donations/v1/funds/3d5986eb-85a3-4567-958a-d7d88ada4ec3"}},"id":"3d5986eb-85a3-4567-958a-d7d88ada4ec3","name":"Community
+        Outreach","org_key":"K5RZW9FS","state":"published","_embedded":{}},{"_links":{"self":{"href":"https://core.subsplash.com/donations/v1/funds/c783c192-d074-47c6-8780-5f4aaed8a0c7"}},"id":"c783c192-d074-47c6-8780-5f4aaed8a0c7","org_key":"K5RZW9FS","state":"unpublished","_embedded":{}},{"_links":{"self":{"href":"https://core.subsplash.com/donations/v1/funds/17adf17d-256d-4566-a358-e7b307b7a4cb"}},"id":"17adf17d-256d-4566-a358-e7b307b7a4cb","name":"Missions
+        Fund","org_key":"K5RZW9FS","state":"published","_embedded":{}}]}}'
+  recorded_at: Fri, 21 Mar 2025 16:10:46 GMT
+recorded_with: VCR 6.3.1

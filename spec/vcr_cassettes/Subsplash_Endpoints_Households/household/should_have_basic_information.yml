@@ -1,0 +1,35 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://core.subsplash.com/people/v1/households/1a514dbf-d708-406a-a337-9ad09d893d7b
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.10.4
+      Authorization:
+      - Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6Ijc1YTM3NDZkLTE4MmItNDM1Ny04OTg2LWUwNjBiNmM4MWJlNSIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDI1ODMzMjIsImlhdCI6MTc0MjU3MjUxNywiaXNzIjoiaHR0cHM6Ly9jb3JlLnN1YnNwbGFzaC5jb20vdG9rZW5zIiwic3ViIjoiMWQyOTAwZTQtNjMzZS00Njc4LWFiZjctMzlmMDkyNDA4YTU5IiwiYXBwcyI6eyJNT1JUQVIiOnsicm9sZXMiOlsiN2Q0MjM1YWMtMzM2MC00YjE5LTkwOWQtZDNkMTkwYjMwY2IzIl19fSwib3JncyI6eyJLNVJaVzlGUyI6eyJyb2xlcyI6WyI3ZDQyMzVhYy0zMzYwLTRiMTktOTA5ZC1kM2QxOTBiMzBjYjMiXX19LCJyYXRlIjp7ImludCI6NjAsImxpbSI6MTAwMDAwMCwiYnVyIjoxNTAwMDAwfX0.YjhbLpuQUOi0xRnNWSYicb7-iKwvgrPuDEZlnakCrzK7QbrOdKYvn-OplxWHmxlAtGXtfA8fb5W9Hc_sjMXLUCZvGH5Q74LL8y0eV3sIl4DlNFQIQ3Y3wZ9jUM27sauuwBu1Vm5I9Oxbs16RdheNWN-aTef2Ke_fIcjjeL027OeEsSrrG-Axk6dCr3n8dl8ls58tVrCz_GDiHAR-SnSDt65ghgjgsW6nWjPplFPAxj72tyzJrq-PpFRwbXQLqgoRXmSIi7r904m3aD1fxatcAg-HHEdpl1vONRvb_vTBLcObUDeI_TJEaBULekToC4qYZfJ0NsNGerBuI06gK7de_g
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Fri, 21 Mar 2025 16:11:07 GMT
+      content-type:
+      - application/hal+json
+      content-length:
+      - '1230'
+      connection:
+      - keep-alive
+      server:
+      - nginx
+      request-id:
+      - d91c723b-6d58-4d24-88fe-baec5a2b4534
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://core.subsplash.com/people/v1/households/1a514dbf-d708-406a-a337-9ad09d893d7b"}},"id":"1a514dbf-d708-406a-a337-9ad09d893d7b","org_key":"K5RZW9FS","name":"Trevino","status":"active","family_id":"67d0910d8f9064792c0a2668","external_id":"0ca57ba2-a90e-40ad-99fe-60961b969b8d","created_at":"2025-03-11T19:37:49Z","updated_at":"2025-03-11T19:40:13Z","_embedded":{"members":[{"_links":{"self":{"href":"https://core.subsplash.com/end-user-auth/v1/profiles/0aecab4a-d2ce-4858-b338-38f54627323b"}},"id":"0aecab4a-d2ce-4858-b338-38f54627323b"},{"_links":{"self":{"href":"https://core.subsplash.com/end-user-auth/v1/profiles/2b6cf69d-1193-4d33-968a-c87e9b02e783"}},"id":"2b6cf69d-1193-4d33-968a-c87e9b02e783"},{"_links":{"self":{"href":"https://core.subsplash.com/end-user-auth/v1/profiles/6f64c1d2-6023-4cfb-934d-643b861c14b3"}},"id":"6f64c1d2-6023-4cfb-934d-643b861c14b3"},{"_links":{"self":{"href":"https://core.subsplash.com/end-user-auth/v1/profiles/da5fd00c-918a-4454-8453-12aa4ba19f43"}},"id":"da5fd00c-918a-4454-8453-12aa4ba19f43"},{"_links":{"self":{"href":"https://core.subsplash.com/end-user-auth/v1/profiles/dd830059-21b8-442b-9300-d9b895487b21"}},"id":"dd830059-21b8-442b-9300-d9b895487b21"}]}}'
+  recorded_at: Fri, 21 Mar 2025 16:11:07 GMT
+recorded_with: VCR 6.3.1

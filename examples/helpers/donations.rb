@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 def print_donations(results)
-  print_list("donation", 'id', results, %w[_embedded donations])
+  print_list('donation', 'id', results, %w[_embedded donations])
 end
 
 def print_donation(results)

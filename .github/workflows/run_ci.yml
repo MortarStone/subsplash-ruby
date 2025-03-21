@@ -1,8 +1,6 @@
 env:
-  CLIENT_ID: ${{ secrets.CLIENT_ID }}
-  CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+  ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
   ORG_KEY: ${{ secrets.ORG_KEY }}
-  APP_KEY: ${{ secrets.APP_KEY }}
 
 name: CI Build
 on: push
@@ -27,8 +25,6 @@ jobs:
           bundler-cache: true
       - name: Run specs
         env:
-          CLIENT_ID: ${{ env.CLIENT_ID }}
-          CLIENT_SECRET: ${{ env.CLIENT_SECRET }}
+          ACCESS_TOKEN: ${{ env.ACCESS_TOKEN }}
           ORG_KEY: ${{ env.ORG_KEY }}
-          APP_KEY: ${{ env.APP_KEY }}
         run: bundle exec rspec spec

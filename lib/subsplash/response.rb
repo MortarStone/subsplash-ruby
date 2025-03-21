@@ -26,7 +26,11 @@ module Subsplash
     def self.parse_body(response_body)
       return if response_body.empty?
 
-      JSON.parse(response_body) rescue response_body
+      begin
+        JSON.parse(response_body)
+      rescue StandardError
+        response_body
+      end
     end
 
     def self.determine_status(http_response)
@@ -40,9 +44,13 @@ module Subsplash
     def parse_error_details
       return unless body.key?('errors')
 
-      @reason += ': ' + body['errors'].each_with_object([]) do |err, arr|
+      @reason = (reason.blank? ? '' : ': ') + error_list.join('; ')
+    end
+
+    def error_list
+      body['errors'].each_with_object([]) do |err, arr|
         arr << "#{err['code']} (#{err['detail']})"
-      end.join('; ')
+      end
     end
   end
 end

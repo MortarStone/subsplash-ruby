@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 Dir[File.join(__dir__, 'helpers', '*.rb')].each { |file| require file }
 
 def print_no_access_message
-  puts "Unless something has recently changed, we do not have access to this table or the table does not exist."
+  puts 'Unless something has recently changed, we do not have access to this table or the table does not exist.'
 end
 
 def print_list(object_name, pk_id_name, response, response_chain = nil)
@@ -29,7 +31,7 @@ end
 def print_metadata(body)
   return unless body.key?('_links')
 
-  puts "Links:"
+  puts 'Links:'
   body['_links'].each do |key, value|
     puts "  #{key}: #{value}"
   end
@@ -40,7 +42,7 @@ end
 def print_rate_limiting(headers)
   return unless headers.key?('x-rate-limit-limit')
 
-  puts "Rate Limiting: "
+  puts 'Rate Limiting: '
   puts "  Limit: #{headers['x-rate-limit-limit']}"
   puts "  Remaining: #{headers['x-rate-limit-remaining']}"
   puts "  Reset: #{headers['x-rate-limit-reset']}"
@@ -53,7 +55,7 @@ end
 
 def print_column_headers(headers)
   headers = [:index] + headers
-  puts headers.map { |h| column_header(h) }.join(" :: ")
+  puts headers.map { |h| column_header(h) }.join(' :: ')
 end
 
 def item_value(item, header)
@@ -71,14 +73,14 @@ def print_row(index, item, column_headers)
     value = value.to_digits if value.instance_of?(BigDecimal)
     cells << value
   end
-  puts cells.join(" :: ")
+  puts cells.join(' :: ')
 end
 
 def print_item(object_name, response, response_chain = nil)
   item = response_chain ? response.body.dig(*response_chain) : response.body
   puts
   if item.nil?
-    puts "Item not found"
+    puts 'Item not found'
   else
     column_headers(object_name).each do |header|
       value = item.is_a?(Hash) ? item_value(item, header) : item.public_send(header)

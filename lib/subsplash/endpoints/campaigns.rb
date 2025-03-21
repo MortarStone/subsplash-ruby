@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 module Subsplash
   module Endpoints
     module Campaigns
       def campaigns(params = {})
         get(
-          "/donations/v1/campaigns",
+          '/donations/v1/campaigns',
           params.deep_merge({ filter: { org_key: @org_key } })
         )
       end

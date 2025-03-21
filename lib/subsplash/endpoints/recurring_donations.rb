@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 module Subsplash
   module Endpoints
     module RecurringDonations
       def recurring_donations(params = {})
         get(
-          "/donations/v1/recurring-donations",
+          '/donations/v1/recurring-donations',
           params.deep_merge({ filter: { org_key: @org_key } })
         )
       end

@@ -1,0 +1,35 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://core.subsplash.com/people/v1/profiles/aeae49a0-53df-4af9-b467-e9e3e8e84469
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.10.4
+      Authorization:
+      - Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6Ijc1YTM3NDZkLTE4MmItNDM1Ny04OTg2LWUwNjBiNmM4MWJlNSIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDI1ODMzMjIsImlhdCI6MTc0MjU3MjUxNywiaXNzIjoiaHR0cHM6Ly9jb3JlLnN1YnNwbGFzaC5jb20vdG9rZW5zIiwic3ViIjoiMWQyOTAwZTQtNjMzZS00Njc4LWFiZjctMzlmMDkyNDA4YTU5IiwiYXBwcyI6eyJNT1JUQVIiOnsicm9sZXMiOlsiN2Q0MjM1YWMtMzM2MC00YjE5LTkwOWQtZDNkMTkwYjMwY2IzIl19fSwib3JncyI6eyJLNVJaVzlGUyI6eyJyb2xlcyI6WyI3ZDQyMzVhYy0zMzYwLTRiMTktOTA5ZC1kM2QxOTBiMzBjYjMiXX19LCJyYXRlIjp7ImludCI6NjAsImxpbSI6MTAwMDAwMCwiYnVyIjoxNTAwMDAwfX0.YjhbLpuQUOi0xRnNWSYicb7-iKwvgrPuDEZlnakCrzK7QbrOdKYvn-OplxWHmxlAtGXtfA8fb5W9Hc_sjMXLUCZvGH5Q74LL8y0eV3sIl4DlNFQIQ3Y3wZ9jUM27sauuwBu1Vm5I9Oxbs16RdheNWN-aTef2Ke_fIcjjeL027OeEsSrrG-Axk6dCr3n8dl8ls58tVrCz_GDiHAR-SnSDt65ghgjgsW6nWjPplFPAxj72tyzJrq-PpFRwbXQLqgoRXmSIi7r904m3aD1fxatcAg-HHEdpl1vONRvb_vTBLcObUDeI_TJEaBULekToC4qYZfJ0NsNGerBuI06gK7de_g
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Fri, 21 Mar 2025 16:16:10 GMT
+      content-type:
+      - application/hal+json
+      content-length:
+      - '884'
+      connection:
+      - keep-alive
+      server:
+      - nginx
+      request-id:
+      - d29e827e-5295-4f18-b164-3563e630d6a9
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://core.subsplash.com/end-user-auth/v1/profiles/aeae49a0-53df-4af9-b467-e9e3e8e84469"}},"id":"aeae49a0-53df-4af9-b467-e9e3e8e84469","short_id":1577495814,"org_key":"K5RZW9FS","first_name":"Melvin","last_name":"Scott","date_of_birth":"2018-09-09","household_role":"child","status":"active","created_source":"import","created_at":"2025-03-11T19:37:45Z","updated_at":"2025-03-11T19:37:46Z","updated_by_user":{"uuid":"395e60b7-4fea-4671-b709-ad18c79aaab8","type":"service.data-import-daemon"},"_embedded":{"end-user":{"_links":{"self":{"href":"https://core.subsplash.com/end-user-auth/v1/end-users/0d6602d1-11ce-48c3-8671-fcd534902905"}},"id":"0d6602d1-11ce-48c3-8671-fcd534902905"},"household":{"_links":{"self":{"href":"https://core.subsplash.com/people/v1/households/a0b8cc42-f5fc-4870-8baf-aeb5a493310e"}},"id":"a0b8cc42-f5fc-4870-8baf-aeb5a493310e"}}}'
+  recorded_at: Fri, 21 Mar 2025 16:16:10 GMT
+recorded_with: VCR 6.3.1

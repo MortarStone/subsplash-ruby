@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'faraday'
 require 'json'
 
@@ -22,7 +24,7 @@ module Subsplash
     private
 
     def request_body
-      body = {
+      {
         client_id: @client_id,
         client_secret: @client_secret,
         grant_type: 'client_credentials'

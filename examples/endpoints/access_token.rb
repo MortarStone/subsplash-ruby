@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'pry'
 require 'date'
 require 'active_support/inflector'

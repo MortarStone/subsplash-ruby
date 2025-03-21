@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'active_model'
 require_relative 'subsplash/access_token'
 require_relative 'subsplash/client'
