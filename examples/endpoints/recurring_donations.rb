@@ -2,5 +2,9 @@
 
 require_relative 'endpoint_helper'
 
-response = @client.recurring_donations
+response = @client.recurring_donations(
+  filter: {
+    status: 'active,canceled,failed'
+  }
+)
 print_recurring_donations(response)

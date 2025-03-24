@@ -10,9 +10,9 @@ require_relative '../print_helper'
 require 'dotenv'
 Dotenv.load(File.join(__dir__, '..', '..', '.env'))
 
-access_token = Subsplash::AccessToken.new(
+requester = Subsplash::TokenRequester.new(
   ENV.fetch('CLIENT_ID', nil),
   ENV.fetch('CLIENT_SECRET', nil)
 )
-puts "Token: #{access_token.token}"
+p requester.new_token
 puts
