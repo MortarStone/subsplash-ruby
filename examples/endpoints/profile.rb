@@ -2,5 +2,8 @@
 
 require_relative 'endpoint_helper'
 
-response = @client.profile('aeae49a0-53df-4af9-b467-e9e3e8e84469')
+response = @client.profile(
+  '217fb512-d349-4ae5-853f-54da0ca9a3fc',
+  include: 'address'
+)
 print_profile(response)

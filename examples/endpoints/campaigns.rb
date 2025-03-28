@@ -2,5 +2,5 @@
 
 require_relative 'endpoint_helper'
 
-response = @client.campaigns
+response = @client.campaigns(include: 'funds')
 print_campaigns(response)

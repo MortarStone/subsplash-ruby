@@ -2,5 +2,7 @@
 
 require_relative 'endpoint_helper'
 
-response = @client.pledges
+response = @client.pledges(
+  include: 'profiles,campaigns'
+)
 print_pledges(response)

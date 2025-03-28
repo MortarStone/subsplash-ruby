@@ -2,5 +2,8 @@
 
 require_relative 'endpoint_helper'
 
-response = @client.household('1a514dbf-d708-406a-a337-9ad09d893d7b')
+response = @client.household(
+  '691a4752-a9b4-44d6-ab45-ac0774b227bb',
+  include: 'address'
+)
 print_household(response)
