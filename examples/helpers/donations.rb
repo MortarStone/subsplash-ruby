@@ -12,6 +12,7 @@ def donation_columns
   [
     'id',
     'auth_date',
-    %w[total_amount value]
+    %w[total_amount value],
+    'status'
   ]
 end
