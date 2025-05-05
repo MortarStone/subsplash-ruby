@@ -12,11 +12,12 @@ module Subsplash
     include Subsplash::Endpoints::Profiles
     include Subsplash::Endpoints::RecurringDonations
 
-    attr_accessor :access_token, :org_key
+    attr_accessor :access_token, :org_key, :app_key
 
-    def initialize(access_token:, org_key:)
+    def initialize(access_token:, org_key:, app_key:)
       @access_token = access_token
       @org_key = org_key
+      @app_key = app_key
     end
 
     def url

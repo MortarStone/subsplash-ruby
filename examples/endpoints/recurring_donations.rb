@@ -6,6 +6,6 @@ response = @client.recurring_donations(
   filter: {
     status: 'active,canceled,failed'
   },
-  include: 'profiles'
+  include: 'profile'
 )
 print_recurring_donations(response)

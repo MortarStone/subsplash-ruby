@@ -6,8 +6,11 @@ def print_no_access_message
   puts 'Unless something has recently changed, we do not have access to this table or the table does not exist.'
 end
 
-def print_list(object_name, pk_id_name, response, response_chain = nil)
+def print_list(object_name, pk_id_name, response, response_chain = nil, response_chain2 = nil)
   list = response.body.dig(*response_chain)
+  if response_chain2.present?
+    list = list.collect! { |l| l.dig(*response_chain2) }.flatten
+  end
 
   if list.nil? || list.empty?
     puts 'Nothing found'
