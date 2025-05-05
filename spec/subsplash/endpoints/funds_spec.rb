@@ -11,7 +11,7 @@ RSpec.describe Subsplash::Endpoints::Funds, vcr: true do
     end
 
     it 'should have basic information' do
-      funds = @response.body['_embedded']['funds']
+      funds = @response.body['_embedded']['terminals'].first['_embedded']['funds']
       expect(funds.is_a?(Array)).to be_truthy
       expect(funds.first.include?('id')).to be_truthy
     end

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://core.subsplash.com/donations/v1/funds?filter%5Borg_key%5D=K5RZW9FS
+    uri: https://core.subsplash.com/donations/v1/terminals?filter%5Bshort_code%5D=S2S2JV
     body:
       encoding: US-ASCII
       string: ''
@@ -10,34 +10,29 @@ http_interactions:
       User-Agent:
       - Faraday v1.10.4
       Authorization:
-      - Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6Ijc1YTM3NDZkLTE4MmItNDM1Ny04OTg2LWUwNjBiNmM4MWJlNSIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDI1ODMzMjIsImlhdCI6MTc0MjU3MjUxNywiaXNzIjoiaHR0cHM6Ly9jb3JlLnN1YnNwbGFzaC5jb20vdG9rZW5zIiwic3ViIjoiMWQyOTAwZTQtNjMzZS00Njc4LWFiZjctMzlmMDkyNDA4YTU5IiwiYXBwcyI6eyJNT1JUQVIiOnsicm9sZXMiOlsiN2Q0MjM1YWMtMzM2MC00YjE5LTkwOWQtZDNkMTkwYjMwY2IzIl19fSwib3JncyI6eyJLNVJaVzlGUyI6eyJyb2xlcyI6WyI3ZDQyMzVhYy0zMzYwLTRiMTktOTA5ZC1kM2QxOTBiMzBjYjMiXX19LCJyYXRlIjp7ImludCI6NjAsImxpbSI6MTAwMDAwMCwiYnVyIjoxNTAwMDAwfX0.YjhbLpuQUOi0xRnNWSYicb7-iKwvgrPuDEZlnakCrzK7QbrOdKYvn-OplxWHmxlAtGXtfA8fb5W9Hc_sjMXLUCZvGH5Q74LL8y0eV3sIl4DlNFQIQ3Y3wZ9jUM27sauuwBu1Vm5I9Oxbs16RdheNWN-aTef2Ke_fIcjjeL027OeEsSrrG-Axk6dCr3n8dl8ls58tVrCz_GDiHAR-SnSDt65ghgjgsW6nWjPplFPAxj72tyzJrq-PpFRwbXQLqgoRXmSIi7r904m3aD1fxatcAg-HHEdpl1vONRvb_vTBLcObUDeI_TJEaBULekToC4qYZfJ0NsNGerBuI06gK7de_g
+      - Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjUwNTA5OGEzLWI1MzgtNDM4My1iNDk2LWVmNGIwN2JmMGE1OSIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDYxNDMxNjgsImlhdCI6MTc0NjEzMjM2MywiaXNzIjoiaHR0cHM6Ly9jb3JlLnN1YnNwbGFzaC5jb20vdG9rZW5zIiwic3ViIjoiMDY1YzYzZTItNTRkNS00NGFmLTlhNzEtN2E3Y2U4Nzg3YjYwIiwiYXBwcyI6eyJTMlMySlYiOnsicm9sZXMiOlsiN2Q0MjM1YWMtMzM2MC00YjE5LTkwOWQtZDNkMTkwYjMwY2IzIl19fSwib3JncyI6eyI1M1dKVE5OQyI6eyJyb2xlcyI6WyI3ZDQyMzVhYy0zMzYwLTRiMTktOTA5ZC1kM2QxOTBiMzBjYjMiXX19LCJyYXRlIjp7ImludCI6NjAsImxpbSI6MTAwMDAwMCwiYnVyIjoxNTAwMDAwfX0.X817XyYgXQkGQomvhBn2Lp-dHNs4ZoaA4eMoB06y9_YSoO6sknQNjnP8CeSjy5gzCsA3iNJhUvQXj3eWej9WEpqloO3JjpYITZ_SsTaw-K-lZRViPjDnK51uiWJw8veLqBgy4lowJPCmPy7ZpGqh_WRomEhh-Jnh6yaNXX1D6eEQeiuaMKW5rSsIFFboXhtgzIZA-rXnR89AZNXGWYT3qSc6oOzWVQoq-Sg1tdQ7az8ZNftGMH3N70q3AVwSj0dV4EBXsgCypDh256ARK9RPyMUQWv0miTdsKvEsx16dvvFozfG0evkx7FzXW9h6lVXjQm3j4ppqc-YrCsmPeCjCLA
   response:
     status:
       code: 200
       message: OK
     headers:
       date:
-      - Fri, 21 Mar 2025 16:14:33 GMT
+      - Thu, 01 May 2025 20:55:16 GMT
       content-type:
       - application/hal+json
       content-length:
-      - '2292'
+      - '1864'
       connection:
       - keep-alive
       server:
       - nginx
       request-id:
-      - '022979d6-9dbc-4b68-82bc-17472fe7c4cd'
+      - c32a58b7-a835-4a70-ab5b-a86a115c3e9e
       resource-count:
-      - '8'
+      - '1'
     body:
       encoding: UTF-8
-      string: '{"_links":{"self":{"href":"https://core.subsplash.com/donations/v1/funds?filter%5Borg_key%5D=K5RZW9FS"},"first":{"href":"https://core.subsplash.com/donations/v1/funds?filter%5Borg_key%5D=K5RZW9FS\u0026page%5Bnumber%5D=1\u0026page%5Bsize%5D=20"},"next":{"href":"https://core.subsplash.com/donations/v1/funds?filter%5Borg_key%5D=K5RZW9FS\u0026page%5Bnumber%5D=2\u0026page%5Bsize%5D=20"}},"count":8,"_embedded":{"funds":[{"_links":{"self":{"href":"https://core.subsplash.com/donations/v1/funds/3de245a4-a292-45be-b5fe-33d0e348d4fd"}},"id":"3de245a4-a292-45be-b5fe-33d0e348d4fd","name":"General
-        Fund","org_key":"K5RZW9FS","state":"published","_embedded":{}},{"_links":{"self":{"href":"https://core.subsplash.com/donations/v1/funds/8c0abfbe-4f70-4de8-9db6-1adac393fdf4"}},"id":"8c0abfbe-4f70-4de8-9db6-1adac393fdf4","name":"Missions","org_key":"K5RZW9FS","state":"published","_embedded":{}},{"_links":{"self":{"href":"https://core.subsplash.com/donations/v1/funds/d002cfa4-d510-4781-82a5-ffa6eb6600c4"}},"id":"d002cfa4-d510-4781-82a5-ffa6eb6600c4","name":"Building
-        Fund","org_key":"K5RZW9FS","state":"published","_embedded":{}},{"_links":{"self":{"href":"https://core.subsplash.com/donations/v1/funds/005bb0d1-4100-43f9-af37-2704c1b686dc"}},"id":"005bb0d1-4100-43f9-af37-2704c1b686dc","name":"Special
-        Fund","org_key":"K5RZW9FS","state":"unpublished","_embedded":{}},{"_links":{"self":{"href":"https://core.subsplash.com/donations/v1/funds/90fd1508-25bf-4524-8d1c-3de387902aeb"}},"id":"90fd1508-25bf-4524-8d1c-3de387902aeb","name":"Youth
-        Fund","org_key":"K5RZW9FS","state":"published","_embedded":{}},{"_links":{"self":{"href":"https://core.subsplash.com/donations/v1/funds/3d5986eb-85a3-4567-958a-d7d88ada4ec3"}},"id":"3d5986eb-85a3-4567-958a-d7d88ada4ec3","name":"Community
-        Outreach","org_key":"K5RZW9FS","state":"published","_embedded":{}},{"_links":{"self":{"href":"https://core.subsplash.com/donations/v1/funds/c783c192-d074-47c6-8780-5f4aaed8a0c7"}},"id":"c783c192-d074-47c6-8780-5f4aaed8a0c7","org_key":"K5RZW9FS","state":"unpublished","_embedded":{}},{"_links":{"self":{"href":"https://core.subsplash.com/donations/v1/funds/17adf17d-256d-4566-a358-e7b307b7a4cb"}},"id":"17adf17d-256d-4566-a358-e7b307b7a4cb","name":"Missions
-        Fund","org_key":"K5RZW9FS","state":"published","_embedded":{}}]}}'
-  recorded_at: Fri, 21 Mar 2025 16:14:33 GMT
+      string: '{"_links":{"self":{"href":"https://core.subsplash.com/donations/v1/terminals?filter%5Bshort_code%5D=S2S2JV"},"first":{"href":"https://core.subsplash.com/donations/v1/terminals?filter%5Bshort_code%5D=S2S2JV\u0026page%5Bnumber%5D=1\u0026page%5Bsize%5D=20"},"next":{"href":"https://core.subsplash.com/donations/v1/terminals?filter%5Bshort_code%5D=S2S2JV\u0026page%5Bnumber%5D=2\u0026page%5Bsize%5D=20"}},"count":1,"_embedded":{"terminals":[{"_links":{"self":{"href":"https://core.subsplash.com/donations/v1/terminals/f8361e4e-aee3-40f8-9165-accb1cee8a40"}},"id":"f8361e4e-aee3-40f8-9165-accb1cee8a40","org_key":"53WJTNNC","short_code":"S2S2JV","donor_address_required":false,"donor_memo_enabled":true,"donor_covered_fees_enabled":false,"donor_covered_fees_default_enabled":false,"guest_giving_enabled":true,"in_app_giving_enabled":false,"donor_choose_fund_enabled":false,"created_at":"2019-03-21T13:57:03Z","updated_at":"2021-04-20T15:52:15Z","_embedded":{"terminal":{"_links":{"self":{"href":"http://payments.app-payments.svc.cluster.local/payments/v1/terminals/1a600d0f-f22c-493a-880e-60c660f9c28a"}},"id":"1a600d0f-f22c-493a-880e-60c660f9c28a","test_mode":false},"payment_account":{"id":"1b9003d0-c061-4b66-968b-1df35b927001","currency":"USD","payments_enabled":false,"remote_deposits_enabled":false,"test_account":false,"rates":{"tier":"","base":{"card":{"percent_fee":2.3,"flat_fee":30},"ach":{"percent_fee":1,"flat_fee":0}}}},"funds":[{"id":"91265a79-a7f3-42b9-acd3-b4b07b5eebd2","org_key":"53WJTNNC","name":"General
+        Fund","state":"published"},{"id":"4216a061-6637-4cc7-b024-48fafea59142","org_key":"53WJTNNC","name":"Missions","state":"published"},{"id":"d3852c83-f399-49f8-82b6-e667b36b1b29","org_key":"53WJTNNC","name":"Building","state":"published"},{"id":"b5e2d645-101f-41eb-adc2-7043774dc3c6","org_key":"53WJTNNC","name":"Other","state":"published"}]}}]}}'
+  recorded_at: Thu, 01 May 2025 20:55:16 GMT
 recorded_with: VCR 6.3.1
